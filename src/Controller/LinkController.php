@@ -37,7 +37,7 @@ class LinkController extends AbstractController
         // return $this->render('');
     }
 
-    #[Route('/redirecionamento', name: 'appRedirecionamento')]
+    #[Route('/redirecionamento', name: 'appRedirecionamento', methods: ['GET'])]
     public function redir(EntityManagerInterface $em): Response
     {
         $link = $em->getRepository(Link::class)->find(4);
