@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <div class="container-sm">
+
+    <div class="card">
+        
+        <div class="card-body mb-3">
+            <h4 class="card-title">Como Funciona</h4>
+            <p class="card-text">
+                <ul>*. Basta Apenas Colar o Link que deseja ser redirecionado.</ul> 
+                <ul>*. Se outro link for adicionado ele sera gravado por cima do anterior.</ul> 
+                <ul>*. A url é direcionada apartir do caminho /redirecionamento.</ul>
+            </p>
+        </div>
+    </div>
+        <form action="/create" method="POST">
+        <div class="mb-3 mt-3">
+            <label for="" class="form-label">Informe o link</label>
+            <input type="text" class="form-control" name="url" id="" aria-describedby="helpId" placeholder="Cole Aqui">
+            <div class = "mt-3">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+            </div>    
+    </div>
+    </div>
+    
+{% endblock %}
