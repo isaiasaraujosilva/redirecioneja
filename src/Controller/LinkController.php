@@ -13,7 +13,7 @@ use Doctrine\ORM\Mapping\Entity;
 
 class LinkController extends AbstractController
 {
-    #[Route('/', name: 'appInsert')]
+    #[Route('/', name: 'appInsert', methods: ['GET'])]
     public function inserLink(): Response
     {
         $name = "oláMundo";
