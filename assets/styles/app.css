@@ -9,4 +9,11 @@ footer {
     padding: 0,625rem;
     background-color: #313131;
     color: #ffffff;
+    width: 100%;
+    align-items: center;
+}
+
+footer p {
+    padding-bottom: 0;
+    
 }
