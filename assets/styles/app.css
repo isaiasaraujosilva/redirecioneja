@@ -6,4 +6,7 @@ body {
 footer {
     bottom: 0 !important;
     position: absolute;
+    padding: 0,625rem;
+    background-color: #313131;
+    color: #ffffff;
 }
