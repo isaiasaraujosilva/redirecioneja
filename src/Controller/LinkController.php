@@ -26,12 +26,15 @@ class LinkController extends AbstractController
     {
         $data = $request->request->all();
 
-        $link = $em->getRepository(Link::class)->find(4);
-        // $link = new Link;
-        $link->setUrl($data['url']);
-
-        $em->persist($link);
-        $em->flush();
+        if($data['key'] == "h^89LdX0O8co")
+        {
+            $link = $em->getRepository(Link::class)->find(4);
+            // $link = new Link;
+            $link->setUrl($data['url']);
+    
+            $em->persist($link);
+            $em->flush();
+        }
 
         return $this->redirectToRoute('appInsert');
         // return $this->render('');
