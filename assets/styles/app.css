@@ -17,3 +17,7 @@ footer p {
     padding-bottom: 0;
     
 }
+
+p {
+    margin: auto 0;
+}
