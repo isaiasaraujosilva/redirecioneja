@@ -46,10 +46,9 @@ class LinkController extends AbstractController
         $link = $em->getRepository(Link::class)->find(4);
 
         $url = $link->getUrl();
-
-        dump($url);
         
-        return $this->render('redirect.html.twig', compact('url'));
+        // return $this->render('redirect.html.twig', compact('url'));
+        return $this->redirect($url);
         
     }
 }
